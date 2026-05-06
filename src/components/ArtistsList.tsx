@@ -11,12 +11,12 @@ const ArtistsList = ({ artists = [] }: ArtistsListProps) => {
     <div className="flex flex-col flex-wrap items-center justify-center gap-4 p-4 sm:flex-row">
       {artists.length > 0 ? (
         artists.map((artist) => (
-          <Link key={artist.id} to={`/artists/${artist.id}`} state={{ artist }}>
+          <Link key={artist.id} to={`/artists/${artist.name}`} state={{ artist }}>
             <ArtistCard name={artist.name} imageUrl={artist.imageUrl} />
           </Link>
         ))
       ) : (
-        <p className="text-lg text-gray-500">No artists found.</p>
+        <p className="text-center text-lg text-gray-500">No artists found.</p>
       )}
     </div>
   );

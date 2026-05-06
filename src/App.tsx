@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import SearchArtistPage from "./pages/SerachArtistPage";
+import SearchArtistPage from "./pages/SearchArtistPage";
 import ArtistPage from "./pages/ArtistPage";
 
 const App = () => {
